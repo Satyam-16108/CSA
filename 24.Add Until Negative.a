@@ -1,0 +1,11 @@
+START: INP
+       JMPN DONE
+       ADD SUM
+       STA SUM
+       BUN START
+
+DONE:  LDA SUM
+       OUT
+       HLT
+
+SUM: .data 2 0

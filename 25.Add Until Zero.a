@@ -1,0 +1,11 @@
+START: INP
+       JMPZ DONE
+       ADD SUM
+       STA SUM
+       BUN START
+
+DONE:  LDA SUM
+       OUT
+       HLT
+
+SUM: .data 2 0   ;2-Byte Sum Initialized To Zero
